@@ -35,6 +35,9 @@ importers:
       svelte-check:
         specifier: ^4.0.0
         version: 4.1.4(svelte@5.20.2)(typescript@5.7.3)
+      sveltekit-adapter-deno:
+        specifier: ^0.16.1
+        version: 0.16.1(@sveltejs/kit@2.17.2(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.20.2)(vite@6.1.1(jiti@1.21.7)(yaml@2.7.0)))(svelte@5.20.2)(vite@6.1.1(jiti@1.21.7)(yaml@2.7.0)))
       tailwind-merge:
         specifier: ^3.0.1
         version: 3.0.1
@@ -918,6 +921,11 @@ packages:
   svelte@5.20.2:
     resolution: {integrity: sha512-aYXJreNUiyTob0QOzRZeBXZMGeFZDch6SrSRV8QTncZb6zj0O3BEdUzPpojuHQ1pTvk+KX7I6rZCXPUf8pTPxA==}
     engines: {node: '>=18'}
+
+  sveltekit-adapter-deno@0.16.1:
+    resolution: {integrity: sha512-AwJj5Y9yoJ5BQVhfFURrVex5GrQmU/v06pW8vs6tyWaJxEYrnF6o3gbELVtCOI/YRl4G02I7n8fBDMY+/cgBdg==}
+    peerDependencies:
+      '@sveltejs/kit': ^2.0.0
 
   tabbable@6.2.0:
     resolution: {integrity: sha512-Cat63mxsVJlzYvN51JmVXIgNoUokrIaT2zLclCXjRd8boZ0004U4KCs/sToJ75C6sdlByWxpYnb5Boif1VSFew==}
@@ -1809,6 +1817,11 @@ snapshots:
       locate-character: 3.0.0
       magic-string: 0.30.17
       zimmerframe: 1.1.2
+
+  sveltekit-adapter-deno@0.16.1(@sveltejs/kit@2.17.2(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.20.2)(vite@6.1.1(jiti@1.21.7)(yaml@2.7.0)))(svelte@5.20.2)(vite@6.1.1(jiti@1.21.7)(yaml@2.7.0))):
+    dependencies:
+      '@sveltejs/kit': 2.17.2(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.20.2)(vite@6.1.1(jiti@1.21.7)(yaml@2.7.0)))(svelte@5.20.2)(vite@6.1.1(jiti@1.21.7)(yaml@2.7.0))
+      esbuild: 0.24.2
 
   tabbable@6.2.0: {}
 
