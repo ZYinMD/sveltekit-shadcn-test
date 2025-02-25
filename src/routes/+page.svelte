@@ -1,5 +1,16 @@
 <script lang="ts">
-  import ShadcnMenu from "./ShadcnMenu.svelte";
+  import GameBoard from "./GameBoard/GameBoard.svelte";
+  import GameSettings from "./GameSettings/GameSettings.svelte";
+  import { s } from "./states/states.svelte";
 </script>
 
-<ShadcnMenu />
+<div class="component">
+  {#if s.view === "game"}
+    <GameBoard />
+  {:else}
+    <GameSettings />
+  {/if}
+</div>
+
+<style>
+</style>

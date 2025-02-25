@@ -1,0 +1,7 @@
+Use SvelteKit2 (which uses Svelte5), which support runes, e.g. $state, $derived, etc.
+
+All states ($state) and derived states ($derived) are exported from states.svelte.ts
+
+Standalone .ts files can be used for logic.
+
+Standalone .svelte.ts files can be used for logic when runes need to be used in those files.
